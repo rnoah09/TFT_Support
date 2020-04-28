@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_champions">
+
+    <fragment
+        android:id="@+id/nav_champions"
+        android:name="com.example.tftsupport.ChampionsFragment"
+        android:label="@string/menu_champions"
+        android:textColor="#FFFFFF"
+        tools:layout="@layout/fragment_champions" />
+
+    <fragment
+        android:id="@+id/nav_items"
+        android:name="com.example.tftsupport.ItemsFragment"
+        android:label="@string/menu_items"
+        android:textColor="#FFFFFF"
+        tools:layout="@layout/fragment_items" />
+
+    <fragment
+        android:id="@+id/nav_cheatsheet"
+        android:name="com.example.tftsupport.CheatSheetFragment"
+        android:label="@string/menu_cheatsheet"
+        android:textColor="#FFFFFF"
+        tools:layout="@layout/fragment_cheat_sheet" />
+
+    <fragment
+        android:id="@+id/nav_builder"
+        android:name="com.example.tftsupport.BuilderFragment"
+        android:label="@string/menu_builder"
+        android:textColor="#FFFFFF"
+        tools:layout="@layout/fragment_builder" />
+
+</navigation>
