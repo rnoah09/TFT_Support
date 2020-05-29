@@ -31,8 +31,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public RecyclerViewAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
                                                      int viewType) {
         // create a new view
-        TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.champion_textview, parent, false);
+            TextView v = (TextView) LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.champion_textview, parent, false);
+
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
     }
