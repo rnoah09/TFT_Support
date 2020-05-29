@@ -9,9 +9,9 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ViewHolder>{
-    private ChildModel[] cDataset;
+    private Champion[] cDataset;
 
-    public ChildAdapter(ChildModel[] myDataset) {
+    public ChildAdapter(Champion[] myDataset) {
         cDataset = myDataset;
     }
 
@@ -31,8 +31,8 @@ class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        ChildModel child = cDataset[position];
-        holder.imageView.setImageResource(child.image);
+        Champion child = cDataset[position];
+        holder.imageView.setImageResource(R.raw.(child.getName()));
         }
 
 
