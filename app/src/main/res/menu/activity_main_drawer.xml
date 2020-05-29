@@ -6,21 +6,17 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_champions"
-            android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_champions" />
         <item
             android:id="@+id/nav_items"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_items"
-            android:textColor="#FFFFFF" />
+            android:title="@string/menu_items" />
         <item
             android:id="@+id/nav_cheatsheet"
-            android:icon="@drawable/ic_grid_on_black_24dp"
-            android:title="@string/menu_cheatsheet"
-            android:textColor="#FFFFFF" />
+            android:title="@string/menu_cheatsheet" />
         <item
             android:id="@+id/nav_builder"
             android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/colorText"
             android:title="@string/menu_builder" />
     </group>
 
