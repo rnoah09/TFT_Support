@@ -19,7 +19,7 @@ public class BuilderFragment extends Fragment {
 
     private ViewFlipper viewFlipper;
     GridView simpleGrid;
-    int logos[] = {R.raw.armor};
+    int logos[] = {R.drawable.armor};
 
     @Nullable
     @Override

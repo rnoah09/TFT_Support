@@ -1,5 +1,6 @@
 package com.example.tftsupport;
 
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,10 +9,12 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ViewHolder>{
-    private Champion[] cDataset;
+import java.util.List;
 
-    public ChildAdapter(Champion[] myDataset) {
+class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ViewHolder>{
+    private List<ChildModel> cDataset;
+
+    public ChildAdapter(List<ChildModel> myDataset) {
         cDataset = myDataset;
     }
 
@@ -26,20 +29,23 @@ class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ViewHolder>{
 
     @Override
     public int getItemCount() {
-        return cDataset.length;
+        return cDataset.size();
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Champion child = cDataset[position];
-        holder.imageView.setImageResource(R.raw.(child.getName()));
+        ChildModel child = cDataset.get(position);
+        holder.imageView.setImageResource(child.image);
         }
 
 
         public static class ViewHolder extends RecyclerView.ViewHolder{
 
+        private ImageView imageView;
+
         public ViewHolder(View itemView){
-            ImageView imageView = itemView.child_imageView;
+            super(itemView);
+            imageView = itemView.findViewById(R.id.child_imageView);
         }
         }
 }

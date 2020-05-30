@@ -19,6 +19,7 @@ import com.google.gson.Gson;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,7 +28,8 @@ public class ChampionsFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
-    private List<Champion> championList;
+    private List<Champion> championsList;
+    private List<ParentModel> traitsList;
 
     @Nullable
     @Override
@@ -40,7 +42,9 @@ public class ChampionsFragment extends Fragment {
 
         Gson gson = new Gson();
         Champion[] champions =  gson.fromJson(sxml, Champion[].class);
-        championList = Arrays.asList(champions);
+        championsList = Arrays.asList(champions);
+
+        generateTraitLists(championsList);
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.rv_parent);
 
@@ -53,10 +57,72 @@ public class ChampionsFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new RecyclerViewAdapter(champions);
+        mAdapter = new RecyclerViewAdapter(traitsList);
         recyclerView.setAdapter(mAdapter);
 
         return rootView;
+    }
+
+    public void generateTraitLists(List<Champion> list){
+        ParentModel blademaster = new ParentModel("Blademaster");
+        ParentModel blaster = new ParentModel("Blaster");
+        ParentModel brawler = new ParentModel("Brawler");
+        ParentModel celestial = new ParentModel("Celestial");
+        ParentModel chrono = new ParentModel("Chrono");
+        ParentModel cybernetic = new ParentModel("Cybernetic");
+        ParentModel darkStar = new ParentModel("Dark Star");
+        ParentModel demolitionist = new ParentModel("Demolitionist");
+        ParentModel infiltrator = new ParentModel("Infiltrator");
+        ParentModel manaReaver = new ParentModel("Mana-Reaver");
+        ParentModel mechPilot = new ParentModel("Mech-Pilot");
+        ParentModel mercenary = new ParentModel("Mercenary");
+        ParentModel mystic = new ParentModel("Mystic");
+        ParentModel protector = new ParentModel("Protector");
+        ParentModel rebel = new ParentModel("Rebel");
+        ParentModel sniper = new ParentModel("Sniper");
+        ParentModel sorcerer = new ParentModel("Sorcerer");
+        ParentModel spacePirate = new ParentModel("Space Pirate");
+        ParentModel starGuardian = new ParentModel("Star Guardian");
+        ParentModel starShip = new ParentModel("Starship");
+        ParentModel valkyrie = new ParentModel("Valkyrie");
+        ParentModel vanguard = new ParentModel("Vanguard");
+        ParentModel tftvoid = new ParentModel("Void");
+
+        traitsList.add(blademaster);
+        traitsList.add(blaster);
+        traitsList.add(brawler);
+        traitsList.add(celestial);
+        traitsList.add(chrono);
+        traitsList.add(cybernetic);
+        traitsList.add(darkStar);
+        traitsList.add(demolitionist);
+        traitsList.add(infiltrator);
+        traitsList.add(manaReaver);
+        traitsList.add(mechPilot);
+        traitsList.add(mercenary);
+        traitsList.add(mystic);
+        traitsList.add(protector);
+        traitsList.add(rebel);
+        traitsList.add(sniper);
+        traitsList.add(sorcerer);
+        traitsList.add(spacePirate);
+        traitsList.add(starGuardian);
+        traitsList.add(starShip);
+        traitsList.add(tftvoid);
+        traitsList.add(valkyrie);
+        traitsList.add(vanguard);
+
+        for(int i = traitsList.size() - 1; i < 1; i--){
+           for(Champion champion : list){
+               if(champion.getTraits().toString().contains(traitsList.get(i).getName())){
+                   int resourceImage = getResources().getIdentifier(champion.getName(), "drawable", getActivity().getPackageName());
+                   ChildModel c = new ChildModel();
+                   c.setImage(resourceImage);
+                   traitsList.get(i).getListChampion().add(c);
+               }
+           }
+        }
+
     }
 
     public String readTextFile(InputStream inputStream) {
