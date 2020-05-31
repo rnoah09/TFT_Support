@@ -1,7 +1,7 @@
 package com.example.tftsupport;
 
 public class ChildModel {
-    int image = -1;
+    int image;
 
     public int getImage() {
         return image;

@@ -3,6 +3,7 @@ package com.example.tftsupport;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ParentModel {
@@ -11,6 +12,7 @@ public class ParentModel {
 
     public ParentModel(String name) {
         this.name = name;
+        children = new ArrayList<>();
     }
 
     public List<ChildModel> getListChampion() {

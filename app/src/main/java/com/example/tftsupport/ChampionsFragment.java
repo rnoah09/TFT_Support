@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +44,7 @@ public class ChampionsFragment extends Fragment {
         Gson gson = new Gson();
         Champion[] champions =  gson.fromJson(sxml, Champion[].class);
         championsList = Arrays.asList(champions);
-
+        traitsList = new ArrayList<>();
         generateTraitLists(championsList);
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.rv_parent);
@@ -112,16 +113,25 @@ public class ChampionsFragment extends Fragment {
         traitsList.add(valkyrie);
         traitsList.add(vanguard);
 
-        for(int i = traitsList.size() - 1; i < 1; i--){
+        for(int i = traitsList.size() - 1; i >= 0; i--){
            for(Champion champion : list){
-               if(champion.getTraits().toString().contains(traitsList.get(i).getName())){
-                   int resourceImage = getResources().getIdentifier(champion.getName(), "drawable", getActivity().getPackageName());
-                   ChildModel c = new ChildModel();
-                   c.setImage(resourceImage);
-                   traitsList.get(i).getListChampion().add(c);
+               for(int j = champion.getTraits().size(); j >= 1; j--){
+                   if(champion.getTraits().get(j -1).contains(traitsList.get(i).getName())){
+                       String championPlaceholder = champion.getName().toLowerCase().replaceAll("\\p{Punct}","").replaceAll(" ","");
+                       Log.e("champname", "generateTraitLists: " + championPlaceholder);
+
+                       int resourceImage = getResources().getIdentifier(championPlaceholder, "drawable", getContext().getPackageName());
+                       ChildModel c = new ChildModel();
+                       c.setImage(resourceImage);
+
+                       Log.e("resourcenumber", "generateTraitLists: " + resourceImage);
+                       traitsList.get(i).getListChampion().add(c);
+                   }
                }
            }
         }
+        Log.e("listcheck", "generateTraitLists: " + spacePirate.getListChampion());
+        Log.e("listcheck2", "generateTraitLists: " + traitsList.size());
 
     }
 

@@ -1,5 +1,6 @@
 package com.example.tftsupport;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +41,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                                                      int viewType) {
         // create a new view
             final View v =  LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.champion_textview, parent, false);
+                    .inflate(R.layout.parent_recycler, parent, false);
 
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
@@ -51,13 +52,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(MyViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        ParentModel parent = pDataset.get(position);
-        holder.textView.setText(parent.getName());
-        RecyclerView.LayoutManager childLayoutManager = new LinearLayoutManager(holder.recyclerView.getContext(), RecyclerView.HORIZONTAL, false);
 
-            holder.recyclerView.setLayoutManager(childLayoutManager);
-            holder.recyclerView.setAdapter(new ChildAdapter(parent.getListChampion()));
-            holder.recyclerView.setRecycledViewPool(viewPool);
+
+        ParentModel parent = pDataset.get(position);
+
+        Log.e("onbindparent2", "onBindViewHolder: " + parent.getListChampion());
+        holder.recyclerView.setAdapter(new ChildAdapter(parent.getListChampion()));
+
+        RecyclerView.LayoutManager childLayoutManager = new LinearLayoutManager(holder.recyclerView.getContext(), RecyclerView.HORIZONTAL, false);
+        holder.recyclerView.setLayoutManager(childLayoutManager);
+
+        Log.e("onbindparent", "onBindViewHolder: ");
+        holder.recyclerView.setRecycledViewPool(viewPool);
+        holder.textView.setText(parent.getName());
 
     }
 

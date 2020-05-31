@@ -3,17 +3,23 @@ package com.example.tftsupport;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.List;
+
 public class Champion implements Parcelable, Comparable<Champion> {
     private String name;
     private String championID;
     private int cost;
-    private String[] traits;
+    private List<String> traits;
+
+    public Champion() {
+
+    }
 
     protected Champion(Parcel in) {
         name = in.readString();
         championID = in.readString();
         cost = in.readInt();
-        traits = in.createStringArray();
+        traits = in.createStringArrayList();
     }
 
     public static final Creator<Champion> CREATOR = new Creator<Champion>() {
@@ -52,14 +58,13 @@ public class Champion implements Parcelable, Comparable<Champion> {
         this.cost = cost;
     }
 
-    public String[] getTraits() {
+    public List<String> getTraits() {
         return traits;
     }
 
-    public void setTraits(String[] traits) {
+    public void setTraits(List<String> traits) {
         this.traits = traits;
     }
-
 
     @Override
     public int describeContents() {
@@ -71,7 +76,7 @@ public class Champion implements Parcelable, Comparable<Champion> {
         dest.writeString(name);
         dest.writeString(championID);
         dest.writeInt(cost);
-        dest.writeStringArray(traits);
+        dest.writeStringList(traits);
     }
 
     @Override
