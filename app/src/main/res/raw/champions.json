@@ -6,6 +6,11 @@
     "traits": [
         "Star Guardian",
         "Sorcerer"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Rabadon's Deathcap",
+      "Jeweled Gauntlet"
     ]
   },
   {
@@ -15,6 +20,11 @@
     "traits": [
         "Mech-Pilot",
         "Sorcerer"
+    ],
+    "items": [
+      "Bramble Vest",
+      "Quicksilver",
+      "Titan's Resolve"
     ]
   },
   {
@@ -24,6 +34,11 @@
     "traits": [
         "Celestial",
         "Sniper"
+    ],
+    "items": [
+      "Spear of Shojin",
+      "Guinsoo's Rageblade",
+      "Trap Claw"
     ]
   },
   {
@@ -33,6 +48,11 @@
     "traits": [
         "Rebel",
         "Starship"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Morellonomicon",
+      "Guardian Angel"
     ]
   },
   {
@@ -42,6 +62,11 @@
     "traits": [
         "Chrono",
         "Brawler"
+    ],
+    "items": [
+      "Dragon's Claw",
+      "Spear of Shojin",
+      "Zephyr"
     ]
   },
   {
@@ -51,6 +76,11 @@
     "traits": [
         "Chrono",
         "Sniper"
+    ],
+    "items": [
+      "Guinsoo's Rageblade",
+      "Hand of Justice",
+      "Spear of Shojin"
     ]
   },
   {
@@ -60,6 +90,11 @@
     "traits": [
         "Void",
         "Brawler"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Morellonomicon",
+      "Ionic Spark"
     ]
   },
   {
@@ -69,6 +104,11 @@
     "traits": [
         "Space Pirate",
         "Mana-Reaver"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Rabadon's Deathcap",
+      "Jeweled Gauntlet"
     ]
   },
   {
@@ -78,6 +118,11 @@
     "traits": [
         "Cybernetic",
         "Infiltrator"
+    ],
+    "items": [
+      "Red Buff",
+      "Giant Slayer",
+      "Statikk Shiv"
     ]
   },
   {
@@ -87,6 +132,11 @@
     "traits": [
         "Chrono",
         "Blaster"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Red Buff",
+      "Sword Breaker"
     ]
   },
   {
@@ -96,6 +146,11 @@
     "traits": [
         "Cybernetic",
         "Blademaster"
+    ],
+    "items": [
+      "Spear of Shojin",
+      "Zz'Rot Portal",
+      "Zephyr"
     ]
   },
   {
@@ -105,6 +160,11 @@
     "traits": [
         "Mech-Pilot",
         "Infiltrator"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Spear of Shojin",
+      "Hand of Justice"
     ]
   },
   {
@@ -115,6 +175,11 @@
         "Space Pirate",
         "Mercenary",
         "Demolitionist"
+    ],
+    "items": [
+      "Rabadon's Deathcap",
+      "Guardian Angel",
+      "Ionic Spark"
     ]
   },
   {
@@ -124,6 +189,11 @@
     "traits": [
         "Space Pirate",
         "Blaster"
+    ],
+    "items": [
+      "Red Buff",
+      "Giant Slayer",
+      "Guardian Angel"
     ]
   },
   {
@@ -134,6 +204,11 @@
         "Cybernetic",
         "Mana-Reaver",
         "Blademaster"
+    ],
+    "items": [
+      "Infinity Edge",
+      "Last Whisper",
+      "Quicksilver"
     ]
   },
   {
@@ -143,6 +218,11 @@
     "traits": [
         "Dark Star",
         "Protector"
+    ],
+    "items": [
+      "Bramble Vest",
+      "Dragon's Claw",
+      "Guardian Angel"
     ]
   },
   {
@@ -152,6 +232,11 @@
     "traits": [
         "Space Pirate",
         "Vanguard"
+    ],
+    "items": [
+      "Rabadon's Deathcap",
+      "Dragon's Claw",
+      "Guardian Angel"
     ]
   },
   {
@@ -161,6 +246,11 @@
     "traits": [
         "Dark Star",
         "Sniper"
+    ],
+    "items": [
+      "Runaan's Hurricane",
+      "Infinity Edge",
+      "Guardian Angel"
     ]
   },
   {
@@ -170,6 +260,11 @@
     "traits": [
         "Rebel",
         "Blaster"
+    ],
+    "items": [
+      "Giant Slayer",
+      "Last Whisper",
+      "Guardian Angel"
     ]
   },
   {
@@ -179,6 +274,11 @@
     "traits": [
         "Valkyrie",
         "Infiltrator"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Morellonomicon",
+      "Demolitionist's Charge"
     ]
   },
   {
@@ -188,6 +288,11 @@
     "traits": [
         "Dark Star",
         "Mystic"
+    ],
+    "items": [
+      "Zeke's Herald",
+      "Spear of Shojin",
+      "Zephyr"
     ]
   },
   {
@@ -197,6 +302,11 @@
     "traits": [
         "Celestial",
         "Mana-Reaver"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Locket of the Iron Solari",
+      "Thief's Gloves"
     ]
   },
   {
@@ -206,6 +316,11 @@
     "traits": [
         "Valkyrie",
         "Blademaster"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Guinsoo's Rageblade",
+      "Rapid Firecannon"
     ]
   },
   {
@@ -215,6 +330,11 @@
     "traits": [
         "Void",
         "Infiltrator"
+    ],
+    "items": [
+      "Infinity Edge",
+      "Rapid Firecannon",
+      "Thief's Gloves"
     ]
   },
   {
@@ -224,6 +344,11 @@
     "traits": [
         "Cybernetic",
         "Vanguard"
+    ],
+    "items": [
+      "Dragon's Claw",
+      "Bramble Vest",
+      "Warmog's Armor"
     ]
   },
   {
@@ -233,6 +358,11 @@
     "traits": [
         "Cybernetic",
         "Blaster"
+    ],
+    "items": [
+      "Hand of Justice",
+      "Red Buff",
+      "Giant Slayer"
     ]
   },
   {
@@ -242,6 +372,11 @@
     "traits": [
         "Celestial",
         "Mystic"
+    ],
+    "items": [
+      "Guinsoo's Rageblade",
+      "Spear of Shojin",
+      "Guardian Angel"
     ]
   },
   {
@@ -251,6 +386,11 @@
     "traits": [
         "Dark Star",
         "Sorcerer"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Chalice of Favor",
+      "Rabadon's Deathcap"
     ]
   },
   {
@@ -260,6 +400,11 @@
     "traits": [
         "Rebel",
         "Brawler"
+    ],
+    "items": [
+      "Dragon's Claw",
+      "Warmog's Armor",
+      "Bramble Vest"
     ]
   },
   {
@@ -269,6 +414,11 @@
     "traits": [
         "Rebel",
         "Blademaster"
+    ],
+    "items": [
+      "Rapid Firecannon",
+      "Hand of Justice",
+      "Quicksilver"
     ]
   },
   {
@@ -279,6 +429,11 @@
         "Valkyrie",
         "Mercenary",
         "Blaster"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Morellonomicon",
+      "Quicksilver"
     ]
   },
   {
@@ -288,6 +443,11 @@
     "traits": [
         "Dark Star",
         "Vanguard"
+    ],
+    "items": [
+      "Dragon's Claw",
+      "Bramble Vest",
+      "Titan's Resolve"
     ]
   },
   {
@@ -297,6 +457,11 @@
     "traits": [
         "Star Guardian",
         "Protector"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Morellonomicon",
+      "Ionic Spark"
     ]
   },
   {
@@ -306,6 +471,11 @@
     "traits": [
         "Star Guardian",
         "Vanguard"
+    ],
+    "items": [
+      "Dragon's Claw",
+      "Bramble Vest",
+      "Rabadon's Deathcap"
     ]
   },
   {
@@ -315,6 +485,11 @@
     "traits": [
         "Celestial",
         "Protector"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Morellonomicon",
+      "Spear of Shojin"
     ]
   },
   {
@@ -324,6 +499,11 @@
     "traits": [
         "Mech-Pilot",
         "Demolitionist"
+    ],
+    "items": [
+      "Bramble Vest",
+      "Quicksilver",
+      "Titan's Resolve"
     ]
   },
   {
@@ -333,6 +513,11 @@
     "traits": [
         "Dark Star",
         "Infiltrator"
+    ],
+    "items": [
+      "Bloodthirster",
+      "Guardian Angel",
+      "Infinity Edge"
     ]
   },
   {
@@ -342,6 +527,11 @@
     "traits": [
         "Chrono",
         "Blademaster"
+    ],
+    "items": [
+      "Dragon's Claw",
+      "Bramble Vest",
+      "Thief's Gloves"
     ]
   },
   {
@@ -351,6 +541,11 @@
     "traits": [
         "Rebel",
         "Mystic"
+    ],
+    "items": [
+      "Chalice of Favor",
+      "Seraph's Embrace",
+      "Star Guardian’s Charm"
     ]
   },
   {
@@ -360,6 +555,11 @@
     "traits": [
         "Star Guardian",
         "Mystic"
+    ],
+    "items": [
+      "Locket of the Iron Solari",
+      "Spear of Shojin",
+      "Zephyr"
     ]
   },
   {
@@ -369,6 +569,11 @@
     "traits": [
         "Star Guardian",
         "Sorcerer"
+    ],
+    "items": [
+      "Chalice of Favor",
+      "Rabadon’s Deathcap",
+      "Jeweled Gauntlet"
     ]
   },
   {
@@ -378,6 +583,11 @@
     "traits": [
         "Chrono",
         "Mana-Reaver"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Spear of Shojin",
+      "Guardian Angel"
     ]
   },
   {
@@ -387,6 +597,11 @@
     "traits": [
         "Chrono",
         "Sorcerer"
+    ],
+    "items": [
+      "Morellonomicon",
+      "Spear of Shojin",
+      "Rabadon's Deathcap"
     ]
   },
   {
@@ -396,6 +611,11 @@
     "traits": [
         "Void",
         "Sorcerer"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Rabadon's Deathcap",
+      "Quicksilver"
     ]
   },
   {
@@ -405,6 +625,11 @@
     "traits": [
         "Cybernetic",
         "Brawler"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Ionic Spark",
+      "Thief's Gloves"
     ]
   },
   {
@@ -414,6 +639,11 @@
     "traits": [
         "Chrono",
         "Vanguard"
+    ],
+    "items": [
+      "Dragon's Claw",
+      "Guardian Angel",
+      "Bramble Vest"
     ]
   },
   {
@@ -423,6 +653,11 @@
     "traits": [
         "Celestial",
         "Blademaster"
+    ],
+    "items": [
+      "Infinity Edge",
+      "Last Whisper",
+      "Guardian Angel"
     ]
   },
   {
@@ -432,6 +667,11 @@
     "traits": [
         "Dark Star",
         "Sorcerer"
+    ],
+    "items": [
+      "Guinsoo's Rageblade",
+      "Rabadon's Deathcap",
+      "Quicksilver"
     ]
   },
   {
@@ -441,6 +681,11 @@
     "traits": [
         "Celestial",
         "Protector"
+    ],
+    "items": [
+      "Dragon's Claw",
+      "Spear of Shojin",
+      "Bramble Vest"
     ]
   },
   {
@@ -450,6 +695,11 @@
     "traits": [
         "Rebel",
         "Blademaster"
+    ],
+    "items": [
+      "Guardian Angel",
+      "Hand of Justice",
+      "Infinity Edge"
     ]
   },
   {
@@ -459,6 +709,11 @@
     "traits": [
         "Rebel",
         "Demolitionist"
+    ],
+    "items": [
+      "Seraph's Embrace",
+      "Rabadon's Deathcap",
+      "Chalice of Favor"
     ]
   },
   {
@@ -468,6 +723,11 @@
     "traits": [
         "Star Guardian",
         "Sorcerer"
+    ],
+    "items": [
+      "Chalice of Favor",
+      "Spear of Shojin",
+      "Rabadon's Deathcap"
     ]
   }
 ]

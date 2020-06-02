@@ -10,16 +10,15 @@ public class Champion implements Parcelable, Comparable<Champion> {
     private String championID;
     private int cost;
     private List<String> traits;
+    private List<String> items;
 
-    public Champion() {
-
-    }
 
     protected Champion(Parcel in) {
         name = in.readString();
         championID = in.readString();
         cost = in.readInt();
         traits = in.createStringArrayList();
+        items = in.createStringArrayList();
     }
 
     public static final Creator<Champion> CREATOR = new Creator<Champion>() {
@@ -66,6 +65,14 @@ public class Champion implements Parcelable, Comparable<Champion> {
         this.traits = traits;
     }
 
+    public List<String> getItems() {
+        return items;
+    }
+
+    public void setItems(List<String> items) {
+        this.items = items;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -77,6 +84,7 @@ public class Champion implements Parcelable, Comparable<Champion> {
         dest.writeString(championID);
         dest.writeInt(cost);
         dest.writeStringList(traits);
+        dest.writeStringList(items);
     }
 
     @Override

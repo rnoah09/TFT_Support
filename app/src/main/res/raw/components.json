@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bf",
+    "name": "B.F. Sword"
+  },
+  {
+    "id": "bow",
+    "name": "Recurve Bow"
+  },
+  {
+    "id": "rod",
+    "name": "Needlessly Large Rod"
+  },
+  {
+    "id": "tear",
+    "name": "Tear of the Goddess"
+  },
+  {
+    "id": "armor",
+    "name": "Chain Vest"
+  },
+  {
+    "id": "cloak",
+    "name": "Negatron Cloak"
+  },
+  {
+    "id": "belt",
+    "name": "Giant's Belt"
+  },
+  {
+    "id": "spatula",
+    "name": "Spatula"
+  },
+  {
+    "id": "gloves",
+    "name": "Sparring Gloves"
+  }
+]

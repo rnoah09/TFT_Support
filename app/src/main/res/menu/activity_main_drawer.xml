@@ -15,8 +15,6 @@
             android:title="@string/menu_cheatsheet" />
         <item
             android:id="@+id/nav_builder"
-            android:icon="@drawable/ic_menu_camera"
-            android:iconTint="@color/colorText"
             android:title="@string/menu_builder" />
     </group>
 

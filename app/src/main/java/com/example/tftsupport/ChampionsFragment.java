@@ -118,20 +118,16 @@ public class ChampionsFragment extends Fragment {
                for(int j = champion.getTraits().size(); j >= 1; j--){
                    if(champion.getTraits().get(j -1).contains(traitsList.get(i).getName())){
                        String championPlaceholder = champion.getName().toLowerCase().replaceAll("\\p{Punct}","").replaceAll(" ","");
-                       Log.e("champname", "generateTraitLists: " + championPlaceholder);
-
                        int resourceImage = getResources().getIdentifier(championPlaceholder, "drawable", getContext().getPackageName());
                        ChildModel c = new ChildModel();
                        c.setImage(resourceImage);
+                       c.setCost(champion.getCost());
 
-                       Log.e("resourcenumber", "generateTraitLists: " + resourceImage);
                        traitsList.get(i).getListChampion().add(c);
                    }
                }
            }
         }
-        Log.e("listcheck", "generateTraitLists: " + spacePirate.getListChampion());
-        Log.e("listcheck2", "generateTraitLists: " + traitsList.size());
 
     }
 

@@ -1,20 +1,29 @@
 package com.example.tftsupport;
 
+import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.Gson;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
-    private List<ParentModel> pDataset;
-    private RecyclerView.RecycledViewPool viewPool;
+public class ItemRecyclerAdapter extends RecyclerView.Adapter<ItemRecyclerAdapter.MyViewHolder> {
+    private List<ItemParentModel> pDataset;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -22,26 +31,28 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         private RecyclerView recyclerView;
         private TextView textView;
+        private ImageView imageView;
 
         public MyViewHolder( final View itemView) {
             super(itemView);
-            recyclerView = itemView.findViewById(R.id.rv_child);
-            textView = itemView.findViewById(R.id.parent_textview);
+            recyclerView = itemView.findViewById(R.id.rv_child_item);
+            textView = itemView.findViewById(R.id.component_textview);
+            imageView = itemView.findViewById(R.id.main_component_item);
         }
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public RecyclerViewAdapter(List<ParentModel> myDataset) {
+    public ItemRecyclerAdapter(List<ItemParentModel> myDataset) {
         pDataset = myDataset;
     }
 
     // Create new views (invoked by the layout manager)
     @Override
-    public RecyclerViewAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
-                                                     int viewType) {
+    public ItemRecyclerAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
+                                                               int viewType) {
         // create a new view
-            final View v =  LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.parent_recycler, parent, false);
+        final View v =  LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.item_parent_recycler, parent, false);
 
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
@@ -54,20 +65,22 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         // - replace the contents of the view with that element
 
 
-        ParentModel parent = pDataset.get(position);
+        ItemParentModel parent = pDataset.get(position);
 
-        holder.recyclerView.setAdapter(new ChildAdapter(parent.getListChampion()));
+        holder.recyclerView.setAdapter(new ItemChildAdapter(parent.getListItem()));
 
-        RecyclerView.LayoutManager childLayoutManager = new LinearLayoutManager(holder.recyclerView.getContext(), RecyclerView.HORIZONTAL, false);
+        RecyclerView.LayoutManager childLayoutManager = new LinearLayoutManager(holder.recyclerView.getContext(), RecyclerView.VERTICAL, false);
         holder.recyclerView.setLayoutManager(childLayoutManager);
 
         holder.textView.setText(parent.getName());
+        holder.imageView.setImageResource(parent.getImage());
 
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
         return pDataset.size();
     }
+    // Return the size of your dataset (invoked by the layout manager)
+
 }

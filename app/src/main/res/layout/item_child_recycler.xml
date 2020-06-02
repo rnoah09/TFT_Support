@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageview_component1_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_add_item"
+        app:layout_constraintEnd_toStartOf="@+id/textview_add_item"
+        app:layout_constraintTop_toBottomOf="@+id/textview_add_item"
+        app:layout_constraintVertical_bias="0.494"
+        app:srcCompat="@drawable/armor" />
+
+    <ImageView
+        android:id="@+id/imageview_component2_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_add_item"
+        app:layout_constraintStart_toEndOf="@+id/textview_add_item"
+        app:layout_constraintTop_toBottomOf="@+id/textview_add_item"
+        app:layout_constraintVertical_bias="0.494"
+        app:srcCompat="@drawable/armor" />
+
+    <ImageView
+        android:id="@+id/imageview_completeditem_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/imageview_component2_item"
+        app:layout_constraintTop_toBottomOf="@+id/textview_completeditem_item"
+        app:srcCompat="@drawable/bramble" />
+
+    <TextView
+        android:id="@+id/textview_add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="+"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_completeditem_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Star Guardian's Charm"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageview_completeditem_item"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/imageview_completeditem_item"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

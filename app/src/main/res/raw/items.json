@@ -1,218 +1,362 @@
 [
   {
-    "id": 1,
-    "name": "B.F. Sword"
+    "id": "deathblade",
+    "name": "Deathblade",
+    "components":[
+        "B.F. Sword",
+        "B.F. Sword"
+    ]
   },
   {
-    "id": 2,
-    "name": "Recurve Bow"
+    "id": "giantslayer",
+    "name": "Giant Slayer",
+    "components":[
+      "B.F. Sword",
+      "Recurve Bow"
+    ]
   },
   {
-    "id": 3,
-    "name": "Needlessly Large Rod"
+    "id": "gunblade",
+    "name": "Hextech Gunblade",
+    "components":[
+      "B.F. Sword",
+      "Needlessly Large Rod"
+    ]
   },
   {
-    "id": 4,
-    "name": "Tear of the Goddess"
+    "id": "spear",
+    "name": "Spear of Shojin",
+    "components":[
+      "B.F. Sword",
+      "Tear of the Goddess"
+    ]
   },
   {
-    "id": 5,
-    "name": "Chain Vest"
+    "id": "ga",
+    "name": "Guardian Angel",
+    "components":[
+      "B.F. Sword",
+      "Chain Vest"
+    ]
   },
   {
-    "id": 6,
-    "name": "Negatron Cloak"
+    "id": "bloodthirster",
+    "name": "Bloodthirster",
+    "components":[
+      "B.F. Sword",
+      "Negatron Cloak"
+    ]
   },
   {
-    "id": 7,
-    "name": "Giant's Belt"
+    "id": "zeke",
+    "name": "Zeke's Herald",
+    "components":[
+      "B.F. Sword",
+      "Giant's Belt"
+    ]
   },
   {
-    "id": 8,
-    "name": "Spatula"
+    "id": "bork",
+    "name": "Blade of the Ruined King",
+    "components":[
+      "B.F. Sword",
+      "Spatula"
+    ]
   },
   {
-    "id": 9,
-    "name": "Sparring Gloves"
+    "id": "ie",
+    "name": "Infinity Edge",
+    "components":[
+      "B.F. Sword",
+      "Sparring Gloves"
+    ]
   },
   {
-    "id": 11,
-    "name": "Deathblade"
+    "id": "rfc",
+    "name": "Rapid Firecannon",
+    "components":[
+      "Recurve Bow",
+      "Recurve Bow"
+    ]
   },
   {
-    "id": 12,
-    "name": "Giant Slayer"
+    "id": "rageblade",
+    "name": "Guinsoo's Rageblade",
+    "components":[
+      "Recurve Bow",
+      "Needlessly Large Rod"
+    ]
   },
   {
-    "id": 13,
-    "name": "Hextech Gunblade"
+    "id": "shiv",
+    "name": "Statikk Shiv",
+    "components":[
+      "Recurve Bow",
+      "Tear of the Goddess"
+    ]
   },
   {
-    "id": 14,
-    "name": "Spear of Shojin"
+    "id": "titan",
+    "name": "Titan's Resolve",
+    "components":[
+      "Recurve Bow",
+      "Chain Vest"
+    ]
   },
   {
-    "id": 15,
-    "name": "Guardian Angel"
+    "id": "runaan",
+    "name": "Runaan's Hurricane",
+    "components":[
+      "Recurve Bow",
+      "Negatron Cloak"
+    ]
   },
   {
-    "id": 16,
-    "name": "Bloodthirster"
+    "id": "zzrot",
+    "name": "Zz'Rot Portal",
+    "components":[
+      "Recurve Bow",
+      "Giant's Belt"
+    ]
   },
   {
-    "id": 17,
-    "name": "Zeke's Herald"
+    "id": "infil",
+    "name": "Infiltrator's Talons",
+    "components":[
+      "Recurve Bow",
+      "Spatula"
+    ]
   },
   {
-    "id": 18,
-    "name": "Blade of the Ruined King"
+    "id": "whisper",
+    "name": "Last Whisper",
+    "components":[
+      "Recurve Bow",
+      "Sparring Gloves"
+    ]
   },
   {
-    "id": 19,
-    "name": "Infinity Edge"
+    "id": "deathcap",
+    "name": "Rabadon's Deathcap",
+    "components":[
+      "Needlessly Large Rod",
+      "Needlessly Large Rod"
+    ]
   },
   {
-    "id": 22,
-    "name": "Rapid Firecannon"
+    "id": "ludens",
+    "name": "Luden's Echo",
+    "components":[
+      "Needlessly Large Rod",
+      "Tear of the Goddess"
+    ]
   },
   {
-    "id": 23,
-    "name": "Guinsoo's Rageblade"
+    "id": "locket",
+    "name": "Locket of the Iron Solari",
+    "components":[
+      "Needlessly Large Rod",
+      "Chain Vest"
+    ]
   },
   {
-    "id": 24,
-    "name": "Statikk Shiv"
+    "id": "spark",
+    "name": "Ionic Spark",
+    "components":[
+      "Needlessly Large Rod",
+      "Negatron Cloak"
+    ]
   },
   {
-    "id": 25,
-    "name": "Titan's Resolve"
+    "id": "morello",
+    "name": "Morellonomicon",
+    "components":[
+      "Needlessly Large Rod",
+      "Giant's Belt"
+    ]
   },
   {
-    "id": 26,
-    "name": "Runaan's Hurricane"
+    "id": "demo",
+    "name": "Demolitionist's Charge",
+    "components":[
+      "Needlessly Large Rod",
+      "Spatula"
+    ]
   },
   {
-    "id": 27,
-    "name": "Zz'Rot Portal"
+    "id": "jeweled",
+    "name": "Jeweled Gauntlet",
+    "components":[
+      "Needlessly Large Rod",
+      "Sparring Gloves"
+    ]
   },
   {
-    "id": 28,
-    "name": "Infiltrator's Talons"
+    "id": "seraph",
+    "name": "Seraph's Embrace",
+    "components":[
+      "Tear of the Goddess",
+      "Tear of the Goddess"
+    ]
   },
   {
-    "id": 29,
-    "name": "Last Whisper"
+    "id": "frozenheart",
+    "name": "Frozen Heart",
+    "components":[
+      "Tear of the Goddess",
+      "Chain Vest"
+    ]
   },
   {
-    "id": 33,
-    "name": "Rabadon's Deathcap"
+    "id": "chalice",
+    "name": "Chalice of Favor",
+    "components":[
+      "Tear of the Goddess",
+      "Negatron Cloak"
+    ]
   },
   {
-    "id": 34,
-    "name": "Luden's Echo"
+    "id": "redemption",
+    "name": "Redemption",
+    "components":[
+      "Tear of the Goddess",
+      "Giant's Belt"
+    ]
   },
   {
-    "id": 35,
-    "name": "Locket of the Iron Solari"
+    "id": "star",
+    "name": "Star Guardian's Charm",
+    "components":[
+      "Tear of the Goddess",
+      "Spatula"
+    ]
   },
   {
-    "id": 36,
-    "name": "Ionic Spark"
+    "id": "fist",
+    "name": "Hand Of Justice",
+    "components":[
+      "Tear of the Goddess",
+      "Sparring Gloves"
+    ]
   },
   {
-    "id": 37,
-    "name": "Morellonomicon"
+    "id": "bramble",
+    "name": "Bramble Vest",
+    "components":[
+      "Chain Vest",
+      "Chain Vest"
+    ]
   },
   {
-    "id": 38,
-    "name": "Demolitionist's Charge"
+    "id": "swordbreaker",
+    "name": "Sword Breaker",
+    "components":[
+      "Chain Vest",
+      "Negatron Cloak"
+    ]
   },
   {
-    "id": 39,
-    "name": "Jeweled Gauntlet"
+    "id": "redbuff",
+    "name": "Red Buff",
+    "components":[
+      "Chain Vest",
+      "Giant's Belt"
+    ]
   },
   {
-    "id": 44,
-    "name": "Seraph's Embrace"
+    "id": "reb",
+    "name": "Rebel Medal",
+    "components":[
+      "Chain Vest",
+      "Spatula"
+    ]
   },
   {
-    "id": 45,
-    "name": "Frozen Heart"
+    "id": "shroud",
+    "name": "Shroud of Stillness",
+    "components":[
+      "Chain Vest",
+      "Sparring Gloves"
+    ]
   },
   {
-    "id": 46,
-    "name": "Chalice of Favor"
+    "id": "dragonclaw",
+    "name": "Dragon's Claw",
+    "components":[
+      "Negatron Cloak",
+      "Negatron Cloak"
+    ]
   },
   {
-    "id": 47,
-    "name": "Redemption"
+    "id": "zephyr",
+    "name": "Zephyr",
+    "components":[
+      "Negatron Cloak",
+      "Giant's Belt"
+    ]
   },
   {
-    "id": 48,
-    "name": "Star Guardian's Charm"
+    "id": "celest",
+    "name": "Celestial Orb",
+    "components":[
+      "Negatron Cloak",
+      "Spatula"
+    ]
   },
   {
-    "id": 49,
-    "name": "Hand Of Justice"
+    "id": "quicksilver",
+    "name": "Quicksilver",
+    "components":[
+      "Negatron Cloak",
+      "Sparring Gloves"
+    ]
   },
   {
-    "id": 55,
-    "name": "Bramble Vest"
+    "id": "warmog",
+    "name": "Warmog's Armor",
+    "components":[
+      "Giant's Belt",
+      "Giant's Belt"
+    ]
   },
   {
-    "id": 56,
-    "name": "Sword Breaker"
+    "id": "protect",
+    "name": "Protector's Chestguard",
+    "components":[
+      "Giant's Belt",
+      "Spatula"
+    ]
   },
   {
-    "id": 57,
-    "name": "Red Buff"
+    "id": "trapclaw",
+    "name": "Trap Claw",
+    "components":[
+      "Giant's Belt",
+      "Sparring Gloves"
+    ]
   },
   {
-    "id": 58,
-    "name": "Rebel Medal"
+    "id": "force",
+    "name": "Force of Nature",
+    "components":[
+      "Spatula",
+      "Spatula"
+    ]
   },
   {
-    "id": 59,
-    "name": "Shroud of Stillness"
+    "id": "dark",
+    "name": "Dark Star's Heart",
+    "components":[
+      "Sparring Gloves",
+      "Spatula"
+    ]
   },
   {
-    "id": 66,
-    "name": "Dragon's Claw"
-  },
-  {
-    "id": 67,
-    "name": "Zephyr"
-  },
-  {
-    "id": 68,
-    "name": "Celestial Orb"
-  },
-  {
-    "id": 69,
-    "name": "Quicksilver"
-  },
-  {
-    "id": 77,
-    "name": "Warmog's Armor"
-  },
-  {
-    "id": 78,
-    "name": "Protector's Chestguard"
-  },
-  {
-    "id": 79,
-    "name": "Trap Claw"
-  },
-  {
-    "id": 88,
-    "name": "Force of Nature"
-  },
-  {
-    "id": 89,
-    "name": "Dark Star's Heart"
-  },
-  {
-    "id": 99,
-    "name": "Thief's Gloves"
+    "id": "thiefglove",
+    "name": "Thief's Gloves",
+    "components":[
+      "Sparring Gloves",
+      "Sparring Gloves"
+    ]
   }
 ]
